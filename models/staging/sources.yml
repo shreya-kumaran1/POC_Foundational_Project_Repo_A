@@ -1,6 +1,6 @@
 sources:
   - name: tpch
-    database: raw
+    database: samples
     schema: tpch
     tables:
       - name: orders
