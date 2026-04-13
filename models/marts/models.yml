@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "One record per order with aggregated line item details"
+    config:
+      access: public
+      contract:
+        enforced: true
+    columns:
+      - name: order_key
+        data_type: bigint
+      - name: customer_key
+        data_type: bigint
+      - name: order_date
+        data_type: date
+      - name: status_code
+        data_type: string
+      - name: priority_code
+        data_type: string
+      - name: clerk_name
+        data_type: string
+      - name: ship_priority
+        data_type: int
+      - name: gross_item_sales_amount
+        data_type: string
+      - name: item_discount_amount
+        data_type: string
+      - name: item_tax_amount
+        data_type: string
+      - name: net_item_sales_amount
+        data_type: string
+      - name: market_segment
+        data_type: string
+      - name: name
+        data_type: string
