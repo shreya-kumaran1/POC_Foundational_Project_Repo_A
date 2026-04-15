@@ -5,7 +5,19 @@ sources:
     tables:
       - name: orders
         description: "One record per order"
+        columns:
+          - name: o_orderkey
+            data_tests:
+              - unique
       - name: customer
         description: "One record per customer"
+        columns:
+          - name: c_custkey
+            data_tests:
+              - unique
       - name: lineitem
         description: "One record per line item within a single order (1 -> n)"
+        columns:
+          - name: l_orderkey
+            data_tests:
+              - unique
