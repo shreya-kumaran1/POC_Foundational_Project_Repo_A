@@ -17,5 +17,7 @@ sources:
             data_tests:
               - unique
               - not_null
+            constraints:
+              - type: primary_key
       - name: lineitem
         description: "One record per line item within a single order (1 -> n)"
